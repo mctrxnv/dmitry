@@ -18,13 +18,6 @@
           ./default.nix
           ./umport.nix
           ./theme/image.nix
-          ./desktops/sway
-          ./programs/gui/kitty
-        ];
-
-        include = [
-          ./desktops/sway/sway.nix
-          ./programs/gui/kitty/default.nix
         ];
       };
 
