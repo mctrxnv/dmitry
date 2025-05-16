@@ -14,7 +14,7 @@
   };
 
   hm = {
-    stylix.xfce.enable = true;
+    stylix.targets.xfce.enable = true;
 
     xfconf.settings = {
       xfce4-panel =
