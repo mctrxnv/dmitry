@@ -86,6 +86,7 @@ in
     hostPlatform = vars.platform;
 
     overlays = [
+      inputs.nur.overlays.default
       (f: p: {
         stable = import inputs.nixpkgs-stable {
           inherit (p)

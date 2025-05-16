@@ -1,4 +1,8 @@
-{ vars, lib, ... }:
+{
+  vars,
+  lib,
+  ...
+}:
 
 {
   imports = [

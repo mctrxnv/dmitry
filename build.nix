@@ -10,9 +10,12 @@ let
     disko.nixosModules.disko
     home.nixosModules.default
     stylix.nixosModules.stylix
+    nur.modules.nixos.default
   ];
 
-  homeModules = [ ];
+  homeModules = with inputs; [
+    betterfox.homeManagerModules.betterfox
+  ];
 
   specialArgs = {
     inherit

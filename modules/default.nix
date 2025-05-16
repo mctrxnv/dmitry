@@ -20,11 +20,13 @@
           ./theme/image.nix
           ./desktops/sway
           ./desktops/waybar
+          ./desktops/kitty
         ];
 
         include = [
           ./desktops/sway/default.nix
           ./desktops/waybar/default.nix
+          ./desktops/kitty/default.nix
         ];
       };
 
