@@ -5,6 +5,8 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs-stable.url = "github:NixOS/nixpkgs/nixos-24.11";
 
+    flake-utils.url = "github:numtide/flake-utils";
+    flatpak.url = "github:gmodena/nix-flatpak";
     hardware.url = "github:NixOS/nixos-hardware/master";
     stylix.url = "github:danth/stylix";
 
@@ -36,6 +38,13 @@
     wallpapers = {
       url = "sourcehut:~neverness/design/wallpapers";
       inputs.nixpkgs.follows = "nixpkgs";
+    };
+    nixages = {
+      url = "sourcehut:~neverness/nixages";
+      inputs = {
+        nixpkgs.follows = "nixpkgs";
+        flake-utils.follows = "flake-utils";
+      };
     };
 
     protonfixes = {
