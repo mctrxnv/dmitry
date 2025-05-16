@@ -13,8 +13,12 @@ let
 in
 
 {
-  hm.gtk = {
-    gtk3.extraConfig = extra;
-    gtk4.extraConfig = extra;
+  hm = {
+    stylix.targets.gtk.enable = true;
+
+    gtk = {
+      gtk3.extraConfig = extra;
+      gtk4.extraConfig = extra;
+    };
   };
 }

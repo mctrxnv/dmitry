@@ -23,7 +23,7 @@ let
   };
 
   vars = {
-    machine = "govnoLaptop";
+    machine = "furryLaptop";
     user = "dmitry";
     host = "parash";
     platform = "x86_64-linux";

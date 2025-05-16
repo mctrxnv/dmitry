@@ -8,6 +8,7 @@
     systemPackages = [ pkgs.fff ];
 
     variables = {
+      EDITOR = "hx";
       FFF_HIDDEN = "1";
       FFF_LS_COLORS = "1";
       FFF_COL1 = "1";

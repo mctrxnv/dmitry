@@ -7,6 +7,9 @@
 {
   hm = {
     home.packages = with pkgs; [ grc ];
+
+    stylix.targets.fish.enable = true;
+
     programs = {
       fish = {
         enable = true;

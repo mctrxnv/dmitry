@@ -4,15 +4,19 @@
 }:
 
 {
-  hm.programs.bat = {
-    enable = true;
+  hm = {
+    stylix.targets.bat.enable = true;
 
-    extraPackages = with pkgs.bat-extras; [
-      batwatch
-      batgrep
-      batdiff
-    ];
+    programs.bat = {
+      enable = true;
 
-    config.wrap = "character";
+      extraPackages = with pkgs.bat-extras; [
+        batwatch
+        batgrep
+        batdiff
+      ];
+
+      config.wrap = "character";
+    };
   };
 }
