@@ -18,6 +18,13 @@
           ./default.nix
           ./umport.nix
           ./theme/image.nix
+          ./desktops/sway
+          ./desktops/waybar
+        ];
+
+        include = [
+          ./desktops/sway/default.nix
+          ./desktops/waybar/default.nix
         ];
       };
 
