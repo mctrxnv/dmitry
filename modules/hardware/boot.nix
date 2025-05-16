@@ -13,7 +13,10 @@
       "quiet"
       "loglevel=3"
       "nowatchdog"
+      "module_blacklist=amdgpu"
     ];
+
+    blacklistedKernelModules = [ "amdgpu" ];
 
     loader = {
       efi.canTouchEfiVariables = true;
