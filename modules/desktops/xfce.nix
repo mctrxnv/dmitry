@@ -7,12 +7,6 @@
 {
   services.xserver.desktopManager.xfce = {
     enable = true;
-
-    enableWaylandSession = true;
-    waylandSessionCompositor = "wayfire";
-
-    enableXfwm = false;
-    noDesktop = true;
   };
 
   hm = {
