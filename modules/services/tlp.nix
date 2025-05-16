@@ -32,16 +32,19 @@
       WIFI_PWR_ON_BAT = "on";
 
       # gpu
-      RADEON_DPM_STATE_ON_AC = "performance";
-      RADEON_DPM_STATE_ON_BAT = "battery";
-      RADEON_POWER_PROFILE_ON_AC = "default";
-      RADEON_POWER_PROFILE_ON_BAT = "default";
+      INTEL_GPU_MIN_FREQ_ON_AC = 0;
+      INTEL_GPU_MIN_FREQ_ON_BAT = 0;
+      INTEL_GPU_MAX_FREQ_ON_AC = 0;
+      INTEL_GPU_MAX_FREQ_ON_BAT = 0;
+      INTEL_GPU_BOOST_FREQ_ON_AC = 0;
+      INTEL_GPU_BOOST_FREQ_ON_BAT = 0;
 
       # idk
       TLP_DEFAULT_MODE = "BAT";
       RUNTIME_PM_ON_AC = "auto";
       RUNTIME_PM_ON_BAT = "auto";
       USB_AUTOSUSPEND = 0;
+      WOL_DISABLE = "Y";
     };
   };
 }

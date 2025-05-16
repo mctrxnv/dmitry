@@ -5,7 +5,7 @@
 
 {
   hm = {
-    stylix.targets.wayfire = true;
+    stylix.targets.wayfire.enable = true;
 
     wayland.windowManager.wayfire = {
       enable = true;
