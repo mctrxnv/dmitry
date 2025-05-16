@@ -1,7 +1,7 @@
 {
   pkgs,
   lib,
-  config',
+  config,
   ...
 }:
 
@@ -190,7 +190,7 @@
       };
     userDirs =
       let
-        mk = config'.home.homeDirectory;
+        mk = config.hm.home.homeDirectory;
       in
       {
         enable = true;

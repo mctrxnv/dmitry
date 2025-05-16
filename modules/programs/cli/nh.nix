@@ -12,8 +12,8 @@ in
     variables.NH_FLAKE = dir;
 
     shellAliases = {
-      rebuild = "nh os switch -H " + vars.host;
-      nixRepl = "nh os repl -H " + vars.host;
+      rebuild = "nh os switch -H " + vars.machine;
+      nixRepl = "nh os repl -H " + vars.machine;
     };
   };
 

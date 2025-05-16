@@ -47,8 +47,8 @@ in
       };
 
       monospace = {
-        name = "CodeNewRoman";
-        package = pkgs.nerd-fonts.code-new-roman;
+        name = "Ubuntu Nerd Font";
+        package = pkgs.nerd-fonts.ubuntu;
       };
 
       sansSerif = monospace;

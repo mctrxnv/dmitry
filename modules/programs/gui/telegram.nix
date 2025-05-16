@@ -3,7 +3,6 @@
   pkgs,
   lib,
   config,
-  config',
   ...
 }:
 
@@ -659,7 +658,7 @@ in
               ''
                 # variables
                 tempdir="$(mktemp -d)"
-                cachedir="${config'.xdg.cacheHome}/stylix-telegram-theme"
+                cachedir="${config.hm.xdg.cacheHome}/stylix-telegram-theme"
                 themename="stylix.tdesktop-theme"
                 walmode="solid"
                 walname="background.jpg"

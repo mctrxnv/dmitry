@@ -1,7 +1,6 @@
 {
   pkgs,
   config,
-  config',
   ...
 }:
 
@@ -11,7 +10,7 @@
       inherit (config.stylix)
         fonts
         ;
-      inherit (config'.stylix)
+      inherit (config.hm.stylix)
         iconTheme
         ;
 
