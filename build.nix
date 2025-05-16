@@ -2,6 +2,7 @@ inputs@{
   self,
   ...
 }:
+
 let
   inherit (inputs) nixpkgs;
 
@@ -14,7 +15,6 @@ let
   homeModules = [ ];
 
   specialArgs = {
-    config' = self.nixosConfigurations.${vars.machine}.config.home-manager.users.${vars.user};
     inherit
       inputs
       self
@@ -30,6 +30,7 @@ let
     version = "24.11";
   };
 in
+
 {
   nixosConfigurations.${vars.machine} = nixpkgs.lib.nixosSystem {
     inherit specialArgs;
